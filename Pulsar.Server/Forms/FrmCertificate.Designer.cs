@@ -42,7 +42,7 @@
             // lblInfo
             // 
             lblInfo.AutoSize = true;
-            lblInfo.Location = new System.Drawing.Point(12, 53);
+            lblInfo.Location = new System.Drawing.Point(93, 242);
             lblInfo.Name = "lblInfo";
             lblInfo.Size = new System.Drawing.Size(130, 13);
             lblInfo.TabIndex = 3;
@@ -50,48 +50,51 @@
             // 
             // btnCreate
             // 
-            btnCreate.Location = new System.Drawing.Point(12, 27);
+            btnCreate.BackColor = System.Drawing.Color.MistyRose;
+            btnCreate.Location = new System.Drawing.Point(12, 237);
             btnCreate.Name = "btnCreate";
             btnCreate.Size = new System.Drawing.Size(75, 23);
             btnCreate.TabIndex = 1;
             btnCreate.Text = "Create";
-            btnCreate.UseVisualStyleBackColor = true;
+            btnCreate.UseVisualStyleBackColor = false;
             btnCreate.Click += btnCreate_Click;
             // 
             // lblDescription
             // 
             lblDescription.AutoSize = true;
-            lblDescription.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
-            lblDescription.Location = new System.Drawing.Point(9, 9);
+            lblDescription.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
+            lblDescription.Location = new System.Drawing.Point(12, 220);
             lblDescription.Name = "lblDescription";
             lblDescription.Size = new System.Drawing.Size(485, 15);
             lblDescription.TabIndex = 0;
-            lblDescription.Text = "To use Pulsar create a new certificate or import an existing one from a previous installation.";
+            lblDescription.Text = ("To use Pulsar create a new certificate or import an existing one from a previous " + "installation.");
             // 
             // txtDetails
             // 
-            txtDetails.Location = new System.Drawing.Point(12, 69);
+            txtDetails.Location = new System.Drawing.Point(12, 27);
             txtDetails.Multiline = true;
             txtDetails.Name = "txtDetails";
             txtDetails.ReadOnly = true;
             txtDetails.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            txtDetails.Size = new System.Drawing.Size(517, 230);
+            txtDetails.Size = new System.Drawing.Size(633, 186);
             txtDetails.TabIndex = 4;
             // 
             // btnImport
             // 
-            btnImport.Location = new System.Drawing.Point(93, 27);
+            btnImport.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            btnImport.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            btnImport.Location = new System.Drawing.Point(498, 219);
             btnImport.Name = "btnImport";
-            btnImport.Size = new System.Drawing.Size(130, 23);
+            btnImport.Size = new System.Drawing.Size(156, 23);
             btnImport.TabIndex = 2;
-            btnImport.Text = "Browse && Import";
-            btnImport.UseVisualStyleBackColor = true;
+            btnImport.Text = "Import Certificate";
+            btnImport.UseVisualStyleBackColor = false;
             btnImport.Click += btnImport_Click;
             // 
             // btnSave
             // 
             btnSave.Enabled = false;
-            btnSave.Location = new System.Drawing.Point(373, 305);
+            btnSave.Location = new System.Drawing.Point(579, 244);
             btnSave.Name = "btnSave";
             btnSave.Size = new System.Drawing.Size(75, 23);
             btnSave.TabIndex = 6;
@@ -102,8 +105,8 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
-            label1.Location = new System.Drawing.Point(12, 310);
+            label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+            label1.Location = new System.Drawing.Point(156, 9);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(355, 15);
             label1.TabIndex = 5;
@@ -111,7 +114,7 @@
             // 
             // btnExit
             // 
-            btnExit.Location = new System.Drawing.Point(454, 306);
+            btnExit.Location = new System.Drawing.Point(498, 244);
             btnExit.Name = "btnExit";
             btnExit.Size = new System.Drawing.Size(75, 23);
             btnExit.TabIndex = 7;
@@ -123,7 +126,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            ClientSize = new System.Drawing.Size(541, 341);
+            ClientSize = new System.Drawing.Size(658, 275);
             Controls.Add(btnExit);
             Controls.Add(label1);
             Controls.Add(btnSave);
@@ -132,14 +135,14 @@
             Controls.Add(lblInfo);
             Controls.Add(btnImport);
             Controls.Add(btnCreate);
-            Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            Cursor = System.Windows.Forms.Cursors.Cross;
+            Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)0));
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            Icon = ((System.Drawing.Icon)resources.GetObject("$this.Icon"));
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "FrmCertificate";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "Pulsar Premium - Certificate Wizard";
+            Text = "Pulsar - Certificate";
             Load += FrmCertificate_Load;
             ResumeLayout(false);
             PerformLayout();
